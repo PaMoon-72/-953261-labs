@@ -25,3 +25,5 @@ i learned about how incoming HTTP requests, set HTTP status codes.
 
 <!-- _Did you use an AI tool in this lab? If yes, which one and for what (e.g., "ChatGPT to explain a Git error message"). If no, write "No AI tools used."_ -->
 i asked Gimini to help me review structure and clarify error message.
+
+
