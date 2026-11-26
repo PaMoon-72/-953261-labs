@@ -2,10 +2,10 @@
 
 | | |
 |---|---|
-| **Name** | _your full name_ |
-| **Nickname** | _your nickname_ |
-| **Student ID** | _6xxxxxxxx_ |
-| **Section** | 701 |
+| **Name** | Phoomrapee Chawee |
+| **Nickname** | Poom |
+| **Student ID** | 692115035 |
+| **Section** | 702 |
 
 ## How to run
 
@@ -18,12 +18,11 @@ npm start        # Part D — the daily report
 
 ## My own function (Part D)
 
-_Name of your function, what it returns, and which array methods it uses._
+cheapDrinks(menu, maxPrice) returns formatted menu lines for available drinks priced at or below maxPrice, sorted from cheapest to most expensive without changing the original menu array. It uses filter, toSorted (or spread + sort), and map. 
 
 ## What I learned today
 
-_Write 2–3 sentences in your own words: when would you use map, filter, find and reduce?_
+Today I learned how to write cleaner JavaScript without mutating original data or using for and while loops. I use map to transform items into a new shape, filter to keep only items that match a condition, find to grab the first matching item, and reduce to combine elements into a single result like a sum or grouped object.
 
 ## AI-use statement
-
-_Did you use an AI tool in this lab? If yes, which one and for what. If no, write "No AI tools used."_
+I used an AI assistant during this lab to get help completing the array method functions, setting up the daily report in app.js, and understanding how the code works so I can explain it.

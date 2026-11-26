@@ -101,3 +101,16 @@ export function bestSeller(orders, menu) {
 export function namesByCategory(menu) {
   // TODO
 }
+
+
+export function cheapDrinks(menu, maxPrice) {
+  return menu
+    .filter(
+      (item) =>
+        item.available &&
+        item.category === "drink" &&
+        item.price <= maxPrice
+    )
+    .toSorted((a, b) => a.price - b.price)
+    .map((item) => menuLine(item));
+}
