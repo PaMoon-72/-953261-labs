@@ -67,6 +67,11 @@ export function withDiscount(item, percent) {
 // orderTotal(orders[0], menu) → 160   (2 × 45 + 1 × 70)
 export function orderTotal(order, menu) {
   // TODO
+  return order.items.reduce((total,line) => {
+    const item = findItem(menu, line.menuId);
+    return total + item.price * line.qty;
+  }, 0);
+  
 }
 
 // Task 8 — map + reduce   (this is quiz Q10 again!)
@@ -74,6 +79,14 @@ export function orderTotal(order, menu) {
 // Return 0 when there are no orders.
 export function averageOrder(orders, menu) {
   // TODO
+  if (orders.length === 0) {
+    return 0;
+  }
+  const total = orders
+    .map(order => orderTotal(order,menu))
+    .reduce((sum, amount) => sum + amount, 0);
+
+    return Math.round((total / orders.length) * 100) / 100;
 }
 
 // ───────────── Stretch (optional) ─────────────
